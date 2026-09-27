@@ -42,6 +42,28 @@
   font-size: 14px;
 }
 
+.person-back-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.person-back-button:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
 @media (max-width: 900px) {
   .health-grid {
     grid-template-columns: repeat(2, 1fr);

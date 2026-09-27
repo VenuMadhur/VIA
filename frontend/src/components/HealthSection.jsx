@@ -71,6 +71,7 @@ function HealthSection() {
         <div>
           <button
             type="button"
+            className="person-back-button"
             onClick={() => {
               setSelectedCategory(null);
             }}
