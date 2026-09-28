@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const Medicines = () => {
+const HealthRecords = () => {
   const navigate = useNavigate();
   return (
     <div>
@@ -12,9 +12,9 @@ const Medicines = () => {
       >
         ← Back to My Health
       </button>
-      <h1>Medicines</h1>;
+      <h1>Health Records</h1>
     </div>
   );
 };
 
-export default Medicines;
+export default HealthRecords;
