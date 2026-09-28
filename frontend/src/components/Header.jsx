@@ -1,25 +1,42 @@
+import { Link, NavLink } from "react-router-dom";
+import "./Header.css";
+
 function Header() {
+  const classN = ({ isActive }) => {
+    if (isActive) {
+      return "active";
+    } else {
+      return "";
+    }
+  };
+
   return (
     <header>
       <nav>
         <div className="logo">
-          <a href="#">VIA</a>
+          <Link to="/">VIA</Link>
           <p>Your Health. Your People. Connected </p>
         </div>
         <ul className="nav-links">
           <li>
-            <a href="#home" className="active">
+            <NavLink to="/" className={classN}>
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#about">About</a>
+            <NavLink to="/about" className={classN}>
+              About
+            </NavLink>
           </li>
           <li>
-            <a href="#myhealth">My Health</a>
+            <NavLink to="/health" className={classN}>
+              My Health
+            </NavLink>
           </li>
           <li>
-            <a href="#mypeople">My People</a>
+            <NavLink to="/people" className={classN}>
+              My People
+            </NavLink>
           </li>
         </ul>
       </nav>
