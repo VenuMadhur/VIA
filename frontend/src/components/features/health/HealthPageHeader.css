@@ -1,0 +1,32 @@
+.health-page-header {
+  margin-bottom: 2rem;
+}
+
+.health-page-header-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background-color: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.health-page-header-back:hover {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.health-page-header-title {
+  margin: 1.25rem 0 0;
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 700;
+}
