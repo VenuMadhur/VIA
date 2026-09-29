@@ -1,4 +1,4 @@
-function Hero() {
+function Home() {
   return (
     <section>
       <h1>One place for your health and the people you care about.</h1>
@@ -12,4 +12,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Home;

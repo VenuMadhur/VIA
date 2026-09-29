@@ -1,15 +1,15 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import HealthSection from "./components/HealthSection";
-import HealthHome from "./components/HealthHome";
-import Medicines from "./components/Medicines";
-import Appointments from "./components/Appointments";
-import MedicalDocuments from "./components/MedicalDocuments";
-import Reminders from "./components/Reminders";
-import MedicalBills from "./components/MedicalBills";
-import HealthRecords from "./components/HealthRecords";
-import PeopleSection from "./components/PeopleSection";
-import Hero from "./components/Hero";
+import Header from "./components/common/Header";
+import HealthSection from "./components/features/health/HealthSection";
+import HealthHome from "./components/features/health/HealthHome";
+import Medicines from "./components/features/health/Medicines";
+import Appointments from "./components/features/health/Appointments";
+import MedicalDocuments from "./components/features/health/MedicalDocuments";
+import Reminders from "./components/features/health/Reminders";
+import MedicalBills from "./components/features/health/MedicalBills";
+import HealthRecords from "./components/features/health/HealthRecords";
+import PeopleSection from "./components/features/people/PeopleSection";
+import Home from "./pages/Home";
 
 import "./App.css";
 
@@ -18,7 +18,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Home />} />
         <Route path="/health" element={<HealthSection />}>
           <Route index element={<HealthHome />} />
           <Route path="medicines" element={<Medicines />} />

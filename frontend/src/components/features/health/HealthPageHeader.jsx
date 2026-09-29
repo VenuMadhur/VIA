@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-const MedicalDocuments = () => {
+const HealthPageHeader = (props) => {
   const navigate = useNavigate();
+
   return (
     <div>
       <button
@@ -12,9 +13,9 @@ const MedicalDocuments = () => {
       >
         ← Back to My Health
       </button>
-      <h1>Medical Documents</h1>
+      <h1>{props.title}</h1>
     </div>
   );
 };
 
-export default MedicalDocuments;
+export default HealthPageHeader;
